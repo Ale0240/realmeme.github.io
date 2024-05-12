@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html style="background-color: lightblue;">
+<head >
+	<meta charset="utf-8">
+	<title></title>
+	<img src="KINJ.png" alt="Company logo " height="200" />
+	<link rel="stylesheet" type="text/css" href="newstyle.css">
+
+</head>
+<?php include"header.html"?>
+<a href="project1.php"><button style="background-color: skyblue;">HomePage</button></a>
+<body>
+<form action="items.php" method="post" style="color:lightblue;">
+	<fieldset style="border-color: black;"> CHOOSE THE JOB</fieldset>
+	<?php
+//shows unkown error while running this page before submitting
+	?>
+	JOB 1: <input type="checkbox" name="JOBS[]" value="JOB1"><br>
+	
+	JOB 2: <input type="checkbox" name="JOBS[]"value="JOB2"><br>
+	
+    JOB 3: <input type="checkbox" name="JOBS[]"value="JOB3">
+  
+    <input type="submit">
+
+</form>
+
+<a href="sucess.php"><button style="color:blue;""background-color:darkgrey;" >Finish</button></a>
+<?php
+$JOBS = $_POST["JOBS"];
+
+ echo $JOBS[0]; 
+ echo $JOBS[1];
+ echo $JOBS[2];
+/*creating database
+connecting to server
+connecting the database the server and the html
+try with xampp
+templetes ,css */
+ ?>
+
+ 
+
+</body>
+<?php include"footer.html"?>
+</html>

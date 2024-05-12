@@ -1,0 +1,29 @@
+<html style="background-color: lightblue;">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<img src="KINJ.png" alt="Company logo" height="200" />
+	<link rel="stylesheet" type="text/css" href="newstyle.css">
+
+</head>
+<body>
+	<?php include "header.html"?>
+	<a href="project1.php"><button style="background-color:skyblue;">HomePage</button></a>
+	<form action="login.php" method="post" style="color:white;""background-color: darkblue;">
+	Email:	<input type="text" name="email" style="color:white;""background-color: darkblue;"><br>
+	Password:	<input type="password" name="password" style="color:white;""background-color: darkblue;"><br>
+		<input type="submit">
+		<hr>
+
+	</form>
+<?php
+//needs database for storing information of users
+echo $_POST["email"];
+echo $_POST["password"];
+?>
+<a href="items.php"><button>Log In</button></a>
+<br><br><br><br><br><br><br><br>
+
+<?php include "footer.html"?>
+</body>
+</html>
