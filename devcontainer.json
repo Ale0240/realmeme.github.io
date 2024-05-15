@@ -1,0 +1,11 @@
+{
+  "name": "PHP Codespace",
+  "image": "mcr.microsoft.com/devcontainers/php:7",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": [
+    "felixfbecker.php-debug",
+    "bmewburn.vscode-intelephense-client"
+  ]
+}
